@@ -31,14 +31,20 @@ p.error {
 	background: url("images/guide/guide_02.png") no-repeat;
 }
 
-#content .guide-container div:first-child {
+#content #following {
 	top: 95px;
-	width: 615px; height : 530px;
+	width: 615px;
+	height: 530px;
 	position: absolute;
 	height: 530px;
 }
 
-#content .guide-container div:last-child {
+#content #following tr:HOVER {
+	color: green;;
+	font-weight: bold;
+}
+
+#content #suggestions {
 	top: 95px;
 	left: 665px;
 	width: 615px;
