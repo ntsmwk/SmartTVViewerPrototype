@@ -1,0 +1,54 @@
+
+<head>
+<title>Account_login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="#b7b7b7">
+
+<fontHeaderLogin> Login Account</fontHeaderLogin>
+<form class="loginForm"  id="loginForm" action="index.html" method="post">
+	<table>
+		<tr>
+			<td>
+				<fontNormal>Account Name:</fontNormal> 
+			</td>
+			<td>
+				<input type="text" id="accountName">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<fontNormal>Password:</fontNormal>
+			</td>
+			<td>
+				<input type="text" id="password">
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+				<input type="button" value="login" onclick="login()">
+			</td>
+		</tr>
+	</table>
+	<div id ="errors">
+    </div>
+</form>
+
+	
+	
+
+<script type="text/javascript">
+function login(){
+	if(document.getElementById("accountName").value === "test" && document.getElementById("password").value === "test"){
+		document.getElementById("loginForm").submit();
+	} else{
+		document.getElementById("errors").innerHTML = "<p>Username or Password wrong!</p>"
+	}
+}
+
+</script>
+	
+</body>
+</html>
