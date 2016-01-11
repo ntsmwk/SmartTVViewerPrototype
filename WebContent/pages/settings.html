@@ -1,1 +1,140 @@
-<h2>Settings</h2>
+
+<link rel="stylesheet" href="../styles.css"/>
+
+
+
+<div style="margin-left:50px">
+    <div>
+    	<a>
+    		<table class="left_tab" id="Tabelle_02" width="200" height="654" cellpadding="0"  margin-left="50" cellspacing="0">
+    			<tr>
+    				<td>
+    					<a onClick="showProfil()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Profil</fontNormal></a>
+				</tr>
+    <tr><td><a onClick="showOnDemand()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>On Demand</fontNormal></a></td>
+    </tr>
+    <tr><td><a onClick="showInterface()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Interface</fontNormal></a></td>
+    </tr>
+    <tr><td><a onClick="showRecord()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Record</fontNormal></a></td>
+    </tr>
+    <tr><td><a onClick="showAccount()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Account</fontNormal></a></td>
+    </tr>
+    <tr><td><a onClick="showInfo()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Info</fontNormal></a></td>
+    </tr>
+    <tr><td><a onClick="showHelp()" onMouseOver="this.style.color=&quot;#7b7a7a&quot;" onMouseOut="this.style.color=&quot;#000000&quot;"><fontNormal>Help</fontNormal></a></td>
+    </tr>
+    </table></div>
+    <div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">
+    <tr height="10%"><td width="30%"><fontNormal>Profil Settings</fontNormal></td><td class="gray"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><fontNormal size="4" >change Profile</fontNormal></a></td>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">Account Name</fontNormal></td> <td><input size="40" type="text" value="woisi" name="accountname"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">First Name</fontNormal></td> <td><input size="40" type="text" value="Simon" name="firstname"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">Last Name</fontNormal></td> <td><input size="40" type="text" value="Woisetschläger" name="lastname"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">Telefon Number</fontNormal></td> <td><input size="40" type="text" value="0660|65790--" name="telefonnumber"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">E-Mail</fontNormal></td> <td><input size="40" type="text" value="s.woisetschlaeger@----.com" name="email"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">Country</fontNormal></td> <td><input size="40" type="text" value="Austria" name="country"/></td></tr>
+    <tr height="10%"><td><fontNormal color="#7b7a7a">Password</fontNormal></td> <td><input size="40" type="text" value="***************" name="password"/></td></tr>
+    <tr height="50%">
+    </table></a></div>
+
+
+    <script type="text/javascript">
+function showProfil() {
+    document.getElementById("tab3").innerHTML = ''
+    + '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
+    + '<tr height="10%"><td width="30%"><fontNormal>Profil Settings</fontNormal></td><td class="gray"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><Font size="4" ><fontNormal>change Profile</fontNormal></Font></a></td>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>Account Name</fontNormal></Font></td> <td><input size="40" type="text" value="woisi" name="accountname"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>First Name</fontNormal></Font></td> <td><input size="40" type="text" value="Simon" name="firstname"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>Last Name</fontNormal></Font></td> <td><input size="40" type="text" value="Woisetschläger" name="lastname"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>Telefon Number</fontNormal></Font></td> <td><input size="40" type="text" value="0660|65790--" name="telefonnumber"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>E-Mail</fontNormal></Font></td> <td><input size="40" type="text" value="s.woisetschlaeger@----.com" name="email"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>Country</fontNormal></Font></td> <td><input size="40" type="text" value="Austria" name="country"/></td></tr>'
+    + '<tr height="10%"><td><Font color="#7b7a7a"><fontNormal>Password</fontNormal></Font></td> <td><input size="40" type="password" value="***************" name="password"/></td></tr>'
+    + '<tr height="50%">'
+    + '</table></a></div>'
+}
+function showOnDemand(){
+    document.getElementById("tab3").innerHTML = ''
+    + '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
+    + '<tr height="10%"><td width="30%"><fontNormal>Provider</fontNormal></td>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Netflix</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>MaxDome</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Amazon</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Watchever</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Videoload</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Viewster</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="10%"><td class="gray"><fontNormal>Sky Snap</fontNormal></td> <td class="gray"><button class="add_remove" onclick="openForm()">add</button> <button class="add_remove" onclick="openForm()">remove</button></td></tr>'
+    + '<tr height="50%">'
+    + '</table></a></div>'
+}
+function showInterface() {
+    document.getElementById("tab3").innerHTML = ''
++ '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
++ '<tr height="10%"><td width="30%"><fontNormal>TV Connection</fontNormal></td>'
++ '<tr height="10%"><td width="50%" class="gray"><fontNormal>Cable</fontNormal></td> <td><fontNormal>Liwest GmbH</fontNormal></td></tr>'
++ '<tr height="10%"><td width="50%" class="gray"><fontNormal>Encrypting</fontNormal></td> <td><fontNormal>Conax</fontNormal></td></tr>'
++ '<tr height="10%"><td width="50%" class="gray"><fontNormal>Number of channels</fontNormal></td> <td><fontNormal>325</fontNormal></td></tr>'
++ '<tr height="10%"><td width="50%" class="gray"><fontNormal>Internet connection</fontNormal></td> <td><fontNormal>100 Mbit/s</fontNormal></td></tr>'
++ '<tr height="10%"><td width="50%" class="gray"><fontNormal>USB Port 1</fontNormal></td> <td><fontNormal>2 TB HDD (325 GB used)</fontNormal></td></tr>'
++ '<tr height="50%">'
++ '</table></a></div>'
+}
+function showRecord() {
+    document.getElementById("tab3").innerHTML = ''
++ '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
++ '<tr height="10%"><td width="40%"><fontNormal>Local Storage</fontNormal><fontNormal size="-1">(0 of 10)</fontNormal></td><td></td><td width="40%"><fontNormal>Online Storage</fontNormal><fontNormal size="-1">(0 of 10)</fontNormal></td>'
++ '<tr height="10%"><td class="gray" width="40%"><fontNormal>none</fontNormal></td><td></td><td class="gray" width="40%"><fontNormal>none</fontNormal></td>'
++ '<tr height="10%"><td class="gray" width="40%"></td><td></td><td class="gray" width="40%"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><fontNormal>get Premium Account</fontNormal></a></td>'
++ '<tr height="90%">'
++ '</table></a></div>'
+}
+function showAccount() {
+    document.getElementById("tab3").innerHTML = ''
++ '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
++ '<tr height="10%"><td width="30%"><fontNormal>Account Administration</fontNormal></td>'
++ '<tr height="10%"><td class="gray"><fontNormal>woisi</fontNormal></td></tr>'
++ '<tr height="10%"><td class="gray"><fontNormal>philipp</fontNormal></td></tr>'
++ '<tr height="10%"><td class="gray"></td> </tr>'
++ '<tr height="10%"><td class="gray"></td> </tr>'
++ '<tr height="10%"><td class="gray"></td> </tr>'
++ '<tr height="10%"><td class="gray"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><fontNormal>create Profile</fontNormal></a></td> </tr>'
++ '<tr height="10%"><td class="gray"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><fontNormal>change settings</fontNormal></a></td> </tr>'
++ '<tr height="10%"><td class="gray"><a onMouseOver="this.style.color=&quot;#000000&quot;" onMouseOut="this.style.color=&quot;#7b7a7a&quot"><fontNormal>get Premium Account</fontNormal></a></td> </tr>'
++ '<tr height="50%">'
++ '</table></a></div>'
+}
+function showInfo() {
+    document.getElementById("tab3").innerHTML = ''
++ '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
++ '<tr height="10%"><td width="30%"><fontNormal>App-Information</fontNormal></td>'
++ '<tr height="10%"><td class="gray"><fontNormal>App:</fontNormal></td> <td><fontNormal>SmartTVViewer</fontNormal></td></tr>'
++ '<tr height="10%"><td class="gray"><fontNormal>Version:</fontNormal></td> <td><fontNormal>1.0.12</fontNormal></td></tr>'
++ '<tr height="10%"><td class="gray"><fontNormal>Licence</fontNormal></td> <td><fontNormal>Premium user</fontNormal></td></tr>'
++ '<tr height="10%"><td class="gray"><fontNormal>Rate this app</fontNormal></td> <td><fontNormal>5/5</fontNormal></td></tr>'
++ '<tr height="60%">'
++ '</table></a></div>'
+}
+function showHelp() {
+    document.getElementById("tab3").innerHTML = ''
++ '<div id="tab3"><table  class="right_tab" id="Tabelle_03" width="600" height="654" margin-left="50" cellpadding="0" cellspacing="0">'
++ '<tr height="10%"><td width="30%"><fontNormal>Hier könnte Ihre Hilfe stehen</fontNormal></td>'
++ '<tr height="90%">'
++ '</table></a></div>'
+}
+
+var addRemoveForm;
+function openForm() {
+    addRemoveForm = window.open("", "MsgWindow", "width=400, height=150, top=500,left=500");    
+    addRemoveForm.document.write('<p>Please enter your Account Name and your Password here.</p>'
+    + ' <table> '
+    + '<tr ><td class="gray">Account Name: </td> <td><input size="40" type="text" value="" name="accountname"/></td></tr>'
+    + '<tr ><td class="gray">Password:</td> <td><input class="add_remove"size="40" type="text" value="" name="password"/></td></tr>'
+    + '<tr ><td class="gray"></td> <td><button onclick="window.open(&quot;&quot;, &quot;_self&quot;, &quot;&quot;); window.close();">Ok</button></td></tr>'
+    + '</table>')
+    addRemoveForm.document.body.style.background = "rgb(183,183,183)"
+    addRemoveForm.document.body.style.fontFamily = "Estrangelo Edessa"
+}
+function closeForm() {
+    addRemoveForm = window.close;
+}
+
+    </script>
