@@ -2,6 +2,7 @@
 <head>
 <title>index</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
@@ -32,7 +33,8 @@ function MM_swapImage() { //v3.0
 	<tr>
 		<td width="76" height="66" bgcolor="#7b7a7a"></td>
 		<td>
-			<a onClick="showNow()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Now','','images/header/index_02_a.png',1)"><img src="images/header/index_02_na.png" alt="now" width="121" height="66" id="Now"></a>
+			<a onClick="showNow()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Now','','images/header/index_02_a.png',1)">
+				<img src="images/header/index_02_na.png" alt="now" width="121" height="66" id="Now"></a>
 		</td>
 		<td width="114" height="66" bgcolor="#7b7a7a"></td>
 		<td>
@@ -55,14 +57,14 @@ function MM_swapImage() { //v3.0
 	<tr>
 		<td colspan="10" width=" 1280" height="654" bgcolor="#b7b7b7">
 			<div id="content" class="content">
-				<img src="images/guide/guide_02.png" width="1280" height="654" id="contentImg"></img>
-				<img src="images/guide/guide_mag_03.png" width="41" height="38" id="guideSearchImg"></img>
+				<a><img src="images/now/now.png" width="1280" height="654"></a>
 			</div>
 		</td>
 	</tr>
 </table>
 
 <script type="text/javascript">
+
 
 function showNow(){
 	document.getElementById("content").innerHTML = '<a><img src="images/now/now.png" width="1280" height="654"></a>';
@@ -73,7 +75,29 @@ document.getElementById("content").innerHTML = '<a><img src="images/guide/guide_
 }
 function showMyProfile(){
 
+	document.getElementById("content").innerHTML = '<br><br>'+
+				'<fontHeaderMyProfile id="myProfileHeader">All</fontHeaderMyProfile>'+
+				'<br>'+
+				'<button onclick="showAll()" class="link" id="allBtn"><fontNormal>All</fontNormal></button>'+
+				' | '+
+				'<button onclick="showMovies()" class="link"><fontNormal>Movies</fontNormal></button>'+
+				' | '+
+				'<button onclick="showSeries()" class="link"><fontNormal>Series</fontNormal></button>'+
+				' | '+
+				'<button onclick="showGenre()" class="link"><fontNormal>Genre</fontNormal></button>'+
+				' | '+
+				'<button onclick="showActors()" class="link"><fontNormal>Actors</fontNormal></button>'+
+				' | '+
+				'<button onclick="showDirector()" class="link"><fontNormal>Director</fontNormal></button>'+
+				' | '+
+				'<button onclick="showRecordings()" class="link"><fontNormal>Recordings</fontNormal></button>'+
+				'<br>'+
+				'<br>'+
+				'<div id="myProfileContainer">'+
+				'<img src="images/covers/my_profile_got_03.png" width="135" height="201">'+
+				'</div>';
 }
+
 function showSettings(){
 
 }
@@ -82,8 +106,104 @@ function showSearch(){
 
 }
 
+function showAll(){
+	document.getElementById("myProfileContainer").innerHTML = '<a onClick="showGotDetails()"><img src="images/covers/my_profile_got_03.png" width="135" height="201"></a>';
+	document.getElementById("myProfileHeader").innerHTML = 'All';
 
+}
+function showMovies(){
+	document.getElementById("myProfileContainer").innerHTML ='';
+	document.getElementById("myProfileHeader").innerHTML = 'Movies';
+}
+function showSeries(){
+	document.getElementById("myProfileContainer").innerHTML = '<a onClick="showGotDetails()"><img src="images/covers/my_profile_got_03.png" width="135" height="201"></a>';
+	document.getElementById("myProfileHeader").innerHTML = 'Series';
+	
+}
+function showGenre(){
+	document.getElementById("myProfileContainer").innerHTML = '	<div id="actionGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapActionGenre()" class="link"><fontNormal>Action</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="comedyGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapComedyGenre()" class="link"><fontNormal>Comedy</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="crimeGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapCrimeGenre()" class="link"><fontNormal>Crime</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="dramaGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapDramaGenre()" class="link"><fontNormal>Drama</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="fantasyGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapFantasyGenre()" class="link"><fontNormal>Fantasy</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="horrorGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapHorrorGenre()" class="link"><fontNormal>Horror</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="romanceGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapRomanceGenre()" class="link"><fontNormal>Romance</fontNormal></button>'+
+				'	</div>'+
+				'	<div id="thrillerGenre" style="Background-color:#B7B7B7" class="genre">'+
+				'		<button onclick="swapThrillerGenre()" class="link"><fontNormal >Thriller</fontNormal></button>'+
+				'	</div>';
+	document.getElementById("myProfileHeader").innerHTML = 'Genre';
+}
+function showActors(){
+	document.getElementById("myProfileContainer").innerHTML = '<fontNormal>You have no actors favorized.</fontNormal>';
+	document.getElementById("myProfileHeader").innerHTML = 'Actors';
+}
+function showDirector(){
+	document.getElementById("myProfileContainer").innerHTML = '<fontNormal>You have no directors favorized.</fontNormal>';
+	document.getElementById("myProfileHeader").innerHTML = 'Directors';
+}
+function showRecordings(){
+	document.getElementById("myProfileContainer").innerHTML = '<fontNormal>You have no recorded movies.</fontNormal>';
+	document.getElementById("myProfileHeader").innerHTML = 'Recordings';
+}
 
+function showGotDetails(){
+	document.getElementById("content").innerHTML = '<img src="images/my_profile/my_profile_got_information.png" width="1280" height="654">'
+}
+
+function swapActionGenre(){
+	var action = document.getElementById("actionGenre");
+	swapGenre(action);
+}
+function swapComedyGenre(){
+	var action = document.getElementById("comedyGenre");
+	swapGenre(action);
+}
+function swapCrimeGenre(){
+	var action = document.getElementById("crimeGenre");
+	swapGenre(action);
+}
+function swapDramaGenre(){
+	var action = document.getElementById("dramaGenre");
+	swapGenre(action);
+}
+function swapFantasyGenre(){
+	var action = document.getElementById("fantasyGenre");
+	swapGenre(action);
+}
+function swapHorrorGenre(){
+	var action = document.getElementById("horrorGenre");
+	swapGenre(action);
+}
+function swapRomanceGenre(){
+	var action = document.getElementById("romanceGenre");
+	swapGenre(action);
+}
+function swapThrillerGenre(){
+	var action = document.getElementById("thrillerGenre");
+	swapGenre(action);
+}
+function swapGenre(action){
+	var colorToCompare = "rgb(183, 183, 183)";
+	if(action.style.backgroundColor!=colorToCompare){
+		action.style.backgroundColor="#B7B7B7";
+	} else{
+		action.style.backgroundColor="#7B7A7A";
+	}
+}
 
 </script>
 <!-- End Save for Web Slices -->

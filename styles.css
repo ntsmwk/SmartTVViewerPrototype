@@ -1,4 +1,9 @@
-fontHeaderLogin {
+h1.header {
+	font-family: estrangelo edessa;
+	font-size: 300%;	
+}
+
+fontHeaderLogin{
 	font-family: estrangelo edessa;
 	font-size: 300%;
 	position: absolute;
@@ -6,9 +11,23 @@ fontHeaderLogin {
 	left: 30%;
 }
 
-fontNormal{
+
+
+fontHeaderMyProfile {
 	font-family: estrangelo edessa;
+	font-size: 300%;
+	
 }
+
+fontNormal {
+	font-family: estrangelo edessa;
+	color: #373737 ;
+}
+
+button.link { 
+ 	background:none;
+ 	border:none; 
+ }
 
 form.loginForm{
 	position: absolute;
@@ -18,6 +37,12 @@ form.loginForm{
 
 p.error{
 	color: red;
+}
+
+div.genre{
+	width: 150px;
+	height: 23px;
+
 }
 
 #content{
