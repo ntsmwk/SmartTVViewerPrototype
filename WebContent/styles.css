@@ -16,11 +16,9 @@ fontMid {
 	font-size: 170%;
 }
 
-
 fontHeader {
 	font-family: estrangelo edessa;
 	font-size: 300%;
-	
 }
 
 form.loginForm {
@@ -29,49 +27,50 @@ form.loginForm {
 	left: 30%;
 }
 
-button.link { 
- 	background:none;
- 	border:none; 
- }
+button.link {
+	background: none;
+	border: none;
+}
 
- table.left_tab{
-    float:left;
-    width:18%;
-    border: solid;
-    border-left: #000000;
-    border-top:#000000;
-    border-bottom:#000000;
+table.left_tab {
+	float: left;
+	width: 18%;
+	border: solid;
+	border-left: #000000;
+	border-top: #000000;
+	border-bottom: #000000;
+}
 
+table.right_tab {
+	float: right;
+	width: 80%;
 }
-table.right_tab{
-    float:right;
-    width:80%;
-    
+
+td.gray {
+	color: #7b7a7a;
 }
-td.gray{
-    color:#7b7a7a;
+
+input {
+	font-family: 'Estrangelo Edessa';
+	font-size: 20px;
+	background-color: rgb(55, 55, 55);
+	color: rgb(183, 183, 183);
+	border-style: none;
 }
-input{
-    font-family: 'Estrangelo Edessa';
-    font-size: 20px;
-    background-color: rgb(55,55,55);
-    color: rgb(183,183,183);
-    border-style: none;
-}
-button.add_remove{
-    border:none;
-    background-color:rgb(55,55,55);
-    color:rgb(183,183,183);
+
+button.add_remove {
+	border: none;
+	background-color: rgb(55, 55, 55);
+	color: rgb(183, 183, 183);
 }
 
 p.error {
 	color: red;
 }
 
-div.genre{
+div.genre {
 	width: 150px;
 	height: 23px;
-
 }
 
 #content {
@@ -119,8 +118,10 @@ div.genre{
 	position: absolute;
 }
 
-#content #following tr, #content #suggestions tr {
+#content #following td, #content #suggestions td {
+	color: #7b7a7a;
 	font-size: 22px;
+	font-family: 'Estrangelo Edessa';
 }
 
 #contentImg {
